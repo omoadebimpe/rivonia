@@ -371,14 +371,14 @@ const Home = () => {
           
           <div className="rounded-2xl overflow-hidden shadow-xl">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.2756!2d3.837507!3d7.3656365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398da26c4bc949%3A0x582f0a67b21c5422!2sPlot%2013%2C%20Oluyole%20Estate%2C%20Block%2053%20Extension%2C%20Oluyole%2C%20Ibadan%20110115%2C%20Oyo!5e0!3m2!1sen!2sng!4v1703123456789!5m2!1sen!2sng"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4096.434812870944!2d3.8349445614817235!3d7.3656368678730155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398da26c4bc949%3A0x582f0a67b21c5422!2sRivonia%20Diagnostics%20and%20Sleep%20Centre!5e0!3m2!1sen!2sng!4v1756340760757!5m2!1sen!2sng"
               width="100%"
               height="400"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Rivonia Diagnostics Location"
+              title="Rivonia Diagnostics and Sleep Centre Location"
             ></iframe>
           </div>
         </div>
