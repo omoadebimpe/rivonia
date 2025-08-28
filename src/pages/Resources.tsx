@@ -9,7 +9,8 @@ import {
   Users,
   AlertCircle,
   ArrowRight,
-  Download
+  Download,
+  Star
 } from 'lucide-react';
 
 const Resources = () => {
@@ -101,6 +102,19 @@ const Resources = () => {
             <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed">
               Helpful health information, educational materials, and trusted medical resources
             </p>
+            
+            {/* Trust badge */}
+            <div className="flex items-center justify-center mt-6">
+              <div className="flex items-center space-x-2 bg-white rounded-full px-6 py-3 shadow-lg border border-yellow-200">
+                <div className="flex">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} size={16} className="text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <span className="text-sm font-bold text-gray-700">5.0 Google Rating</span>
+                <span className="text-sm text-gray-500">• Trusted by 15,000+ Patients</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>

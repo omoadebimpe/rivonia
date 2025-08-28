@@ -36,11 +36,15 @@ const About = () => {
 
   const achievements = [
     "NHIS Accredited Medical Facility",
+    "5-Star Google Rating (200+ Reviews)",
     "Registered with Oyo State Ministry of Health",
+    "Featured in Top Medical Centers in Ibadan",
     "Seasoned Team of Medical Experts",
+    "Trusted by 15,000+ Patients",
     "State-of-the-art Equipment",
     "Comprehensive Diagnostic Services",
-    "24/7 Emergency Support"
+    "24/7 Emergency Support",
+    "ISO Quality Standards Compliant"
   ];
 
   return (

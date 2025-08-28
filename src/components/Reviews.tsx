@@ -28,6 +28,18 @@ const Reviews = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             5 Stars on Google – Here's What Our Patients Say
           </h2>
+          <div className="flex items-center justify-center space-x-4 mb-6">
+            <div className="flex items-center space-x-2 bg-gradient-to-r from-yellow-50 to-orange-50 border border-yellow-200 rounded-full px-6 py-3">
+              <div className="flex">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} size={20} className="text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <span className="text-lg font-bold text-gray-800">5.0</span>
+              <span className="text-sm text-gray-600">• 200+ Reviews</span>
+            </div>
+          </div>
+          <p className="text-lg text-gray-600">Trusted by thousands of patients across Ibadan and Oyo State</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">

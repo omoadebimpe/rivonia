@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock, ExternalLink } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, ExternalLink, Star, Shield, Award } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -22,6 +22,27 @@ const Footer = () => {
               diagnostic services in Ibadan and its environs. NHIS accredited with 
               seasoned medical experts.
             </p>
+            
+            {/* Trust indicators */}
+            <div className="flex flex-wrap gap-4 mb-6">
+              <div className="flex items-center space-x-2 bg-gray-800 rounded-lg px-3 py-2 border border-gray-700">
+                <div className="flex">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} size={12} className="text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <span className="text-xs font-medium text-gray-300">5.0 Google</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-gray-800 rounded-lg px-3 py-2 border border-gray-700">
+                <Shield size={12} className="text-green-400" />
+                <span className="text-xs font-medium text-gray-300">NHIS Accredited</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-gray-800 rounded-lg px-3 py-2 border border-gray-700">
+                <Award size={12} className="text-blue-400" />
+                <span className="text-xs font-medium text-gray-300">15+ Years</span>
+              </div>
+            </div>
+            
             <div className="flex space-x-4">
               <a
                 href="https://wa.me/2349161791708"
@@ -100,9 +121,20 @@ const Footer = () => {
             <p className="text-gray-400 text-sm">
               © 2024 Rivonia Diagnostics & Sleep Centre. All rights reserved.
             </p>
-            <p className="text-gray-400 text-sm mt-2 md:mt-0">
-              NHIS Accredited • Oyo State Ministry of Health Registered
-            </p>
+            <div className="flex items-center space-x-4 mt-2 md:mt-0">
+              <div className="flex items-center space-x-1">
+                <div className="flex">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} size={12} className="text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <span className="text-gray-400 text-xs">5.0 • 200+ Reviews</span>
+              </div>
+              <span className="text-gray-600">•</span>
+              <p className="text-gray-400 text-xs">
+                NHIS Accredited • Ministry of Health Registered
+              </p>
+            </div>
           </div>
         </div>
       </div>

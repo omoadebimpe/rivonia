@@ -44,10 +44,10 @@ const Home = () => {
   ];
 
   const stats = [
-    { icon: Users, number: "10,000+", label: "Patients Served" },
+    { icon: Users, number: "15,000+", label: "Happy Patients" },
     { icon: Award, number: "15+", label: "Years Experience" },
-    { icon: Shield, number: "NHIS", label: "Accredited" },
-    { icon: Clock, number: "24/7", label: "Emergency Care" }
+    { icon: Shield, number: "5★", label: "Google Rating" },
+    { icon: Clock, number: "NHIS", label: "Accredited" }
   ];
 
   return (
@@ -68,6 +68,25 @@ const Home = () => {
                 diagnostic services with compassionate care in Ibadan and its environs.
               </p>
 
+              {/* Trust Indicators */}
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 mb-8">
+                <div className="flex items-center space-x-2 bg-white rounded-full px-4 py-2 shadow-md">
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} size={16} className="text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                  <span className="text-sm font-semibold text-gray-700">5.0 Google</span>
+                </div>
+                <div className="flex items-center space-x-2 bg-white rounded-full px-4 py-2 shadow-md">
+                  <Shield size={16} className="text-green-600" />
+                  <span className="text-sm font-semibold text-gray-700">NHIS Accredited</span>
+                </div>
+                <div className="flex items-center space-x-2 bg-white rounded-full px-4 py-2 shadow-md">
+                  <Award size={16} className="text-blue-600" />
+                  <span className="text-sm font-semibold text-gray-700">15+ Years Trusted</span>
+                </div>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <a
                   href="https://wa.me/2349161791708"
@@ -101,12 +120,12 @@ const Home = () => {
               {/* Floating Stats Card */}
               <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-6 border border-gray-100">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                    <Shield size={24} className="text-green-600" />
+                  <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center">
+                    <Star size={24} className="text-yellow-500 fill-current" />
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-gray-900">NHIS</p>
-                    <p className="text-sm text-gray-600">Accredited</p>
+                    <p className="text-2xl font-bold text-gray-900">5.0★</p>
+                    <p className="text-sm text-gray-600">Google Rating</p>
                   </div>
                 </div>
               </div>
@@ -143,6 +162,27 @@ const Home = () => {
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
                 Rivonia Diagnostics & Sleep Centre
               </h2>
+              
+              {/* Trust badges */}
+              <div className="flex flex-wrap gap-4 mb-6">
+                <div className="flex items-center space-x-2 bg-gradient-to-r from-yellow-50 to-orange-50 border border-yellow-200 rounded-lg px-3 py-2">
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} size={14} className="text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                  <span className="text-sm font-semibold text-gray-700">5.0 on Google</span>
+                </div>
+                <div className="flex items-center space-x-2 bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-lg px-3 py-2">
+                  <Shield size={14} className="text-green-600" />
+                  <span className="text-sm font-semibold text-gray-700">NHIS Accredited</span>
+                </div>
+                <div className="flex items-center space-x-2 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg px-3 py-2">
+                  <Users size={14} className="text-blue-600" />
+                  <span className="text-sm font-semibold text-gray-700">15,000+ Patients</span>
+                </div>
+              </div>
+              
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
                 Rivonia Diagnostics and Sleep Centre is a privately owned indigenous medical 
                 facility incorporated in the Oyo State capital, Ibadan. The facility is 

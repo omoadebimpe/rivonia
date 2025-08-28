@@ -129,6 +129,27 @@ const Services = () => {
             <p className="text-xl lg:text-2xl text-gray-600 mb-8 leading-relaxed">
               The results you can trust - Comprehensive diagnostic services with world-class technology
             </p>
+            
+            {/* Trust indicators */}
+            <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
+              <div className="flex items-center space-x-2 bg-white rounded-full px-4 py-2 shadow-lg border border-yellow-200">
+                <div className="flex">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} size={16} className="text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <span className="text-sm font-bold text-gray-700">5.0 Google Rating</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-white rounded-full px-4 py-2 shadow-lg border border-green-200">
+                <Shield size={16} className="text-green-600" />
+                <span className="text-sm font-bold text-gray-700">NHIS Accredited</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-white rounded-full px-4 py-2 shadow-lg border border-blue-200">
+                <Users size={16} className="text-blue-600" />
+                <span className="text-sm font-bold text-gray-700">15,000+ Patients</span>
+              </div>
+            </div>
+            
             <a
               href="https://wa.me/2349161791708"
               target="_blank"

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Stethoscope } from 'lucide-react';
+import { Menu, X, Stethoscope, Star } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,7 +28,17 @@ const Header = () => {
               <h1 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
                 Rivonia Diagnostics
               </h1>
-              <p className="text-sm text-gray-600 font-medium">& Sleep Centre</p>
+              <div className="flex items-center space-x-2">
+                <p className="text-sm text-gray-600 font-medium">& Sleep Centre</p>
+                <div className="flex items-center space-x-1">
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} size={12} className="text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                  <span className="text-xs text-gray-500 font-medium">5.0</span>
+                </div>
+              </div>
             </div>
           </Link>
 
