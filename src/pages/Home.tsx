@@ -12,7 +12,8 @@ import {
   Clock,
   MapPin,
   Phone,
-  Mail
+  Mail,
+  Star
 } from 'lucide-react';
 
 const Home = () => {
